@@ -1,4 +1,4 @@
-# Pathfinding Visualizer
+# Pathfinding Visualizer 🧭
 
  ***⚠️Originally developed in Summer 2020⚠️***
 
