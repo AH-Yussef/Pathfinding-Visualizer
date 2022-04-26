@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Pathfinding-Visualizer</title>
+    </head>
+    <body>
+        <div class="screen">
+            <div class="control-bar">
+                <div class="control-select">
+                    <select name="path-finding" id="path-finding-algos">
+                        <option  disabled selected>path-finding algo</option>
+                        <option value=0>BFS</option>
+                        <option value=1>Dijkstra</option>
+                        <option value=2>A*</option>
+                    </select>
+                </div>
+                
+                <div class="control-select">
+                    <select name="maze-generation" id="maze-generation-algos">
+                        <option  disabled selected>maze-generation algo</option>
+                        <option value=0>recursive Backtracker</option>
+                        <option value=1>eller</option>
+                        <option value=2>kruskal</option>
+                    </select>
+                </div>
+                
+                <span class="button" id = "mazeGeneration-btn">Generate maze</span>
+                <span class="button" id = "Visualize-btn">Visualize</span>
+                <span class="button" id = "clear-path-btn">Clear path</span>
+                <span class="button" id = "clear-grid-btn">Clear grid</span> 
+
+
+                <div class="control-select">
+                    <select name="speed" id="speed-control">
+                        <option value=1>Fast</option>
+                        <option value=20>Average</option>
+                        <option value=100>Slow</option>
+                    </select>
+                </div>
+            </div>
+            <div id="container">
+                <table id = "grid"></table>
+            </div>
+        </div>
+        <script type="module" src="main.js"></script>
+        <script type="module" src="./components/grid.js"></script>
+        <script type="module" src="./components/node.js"></script>
+
+        <script type="module" src="./PathFinding_algorithms/BFS.js"></script>
+        <script type="module" src="./PathFinding_algorithms/Dijkstra.js"></script>
+        <script type="module" src="./PathFinding_algorithms/aStar.js"></script>
+        <script type="module" src="./PathFinding_algorithms/GeneralFunctions.js"></script>
+
+
+        <script type="module" src="./MazeGeneration_algorithms/recursiveBacktracking.js"></script>
+        <script type="module" src="./MazeGeneration_algorithms/eller.js"></script>
+        <script type="module" src="./MazeGeneration_algorithms/Kruskal.js"></script>
+
+        <script type="module" src="./Data_Structures/queue.js"></script>
+        <script type="module" src="./Data_Structures/indexedPQ.js"></script>
+        <script type="module" src="./Data_Structures/biDirectionalMap.js"></script>
+        <script type="module" src="./Data_Structures/minD-aryHeap.js"></script>
+    </body>
+</html>
