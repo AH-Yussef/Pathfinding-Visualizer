@@ -27,7 +27,7 @@ TRY IT OUT! 👉 [HERE](https://ah-yussef.github.io/Pathfinding-Visualizer/)
 
 ![Dijkstra](Demo/dijkstra.gif)
 
-##### **2.1. A\***
+##### **2.2. A\***
 
 ![Dijkstra](Demo/astar.gif)
 
